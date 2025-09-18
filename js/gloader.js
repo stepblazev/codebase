@@ -17,7 +17,7 @@ window.Gloader = {
     enable: function (caption) {
         if (!caption) caption = this.config.baseCaption;
 
-        this.nodes.caption.textContent = showCaption ? caption : '';
+        this.nodes.caption.textContent = this.config.showCaption ? caption : '';
         this.nodes.root.classList.add(this.config.activeClass);
 
         if (this.config.lockScroll) {
