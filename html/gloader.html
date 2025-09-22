@@ -36,7 +36,7 @@
         }
 
         .gloader__inner {
-            display: flex;
+            display: none;
             align-items: center;
             flex-direction: column;
             gap: 24px;
@@ -52,6 +52,10 @@
         .gloader._active {
             opacity: 1;
             visibility: visible;
+        }
+
+        .gloader._active .gloader__inner {
+            display: flex;
         }
         
         .gloader .sk-chase {
